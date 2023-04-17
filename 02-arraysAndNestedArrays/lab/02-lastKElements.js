@@ -1,12 +1,17 @@
 function lastKElements(n, k) {
-    let array = [1];
+    let array = [1]
     for (let index = 2; index <= n; index++) {
         if (index >= k) {
             let newDigit = 0
-            let innerIndex = index - k;
-            for (let inner = innerIndex; inner <= array.length; inner++) {
-                if(inner!=array.length){
-                    let newDigit += array[inner];
+            if (array.length > k) {
+                let innerIndex = array.length - k;
+                for (let inner = innerIndex; inner < array.length; inner++) {
+                    newDigit += array[inner];
+                }
+            }
+            else {
+                for (let totalIndex = 0; totalIndex < array.length; totalIndex++) {
+                    newDigit += array[totalIndex];
                 }
             }
             array.push(newDigit)
@@ -14,6 +19,6 @@ function lastKElements(n, k) {
         else {
             array.push(1)
         }
-        console.log(array)
     }
-} lastKElements(6, 3)
+    return array
+} lastKElements(20,10)
