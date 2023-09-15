@@ -1,18 +1,15 @@
-function diagonalSums(arr) {
-    let sumsArr = [];
-    let sum = 0;
-    for (let index = 0; index < arr.length; index++) {
-        let digit = arr[index][index];
-        sum += digit;
+function diagonalSum(array) {
+    let firstDiagonal = 0;
+    let secondDiagonal = 0;
+    let i = 0;
+    for (let index = 0; index < array.length; index++) {
+        firstDiagonal += array[index][i]
+        i++;
     }
-    sumsArr.push(sum);
-    sum = 0;
-    let count = arr.length-1;
-    for (let index = 0; index < arr.length; index++) {
-        let digit = arr[index][count];
-        sum += digit;
-        count--;
+    i = array.length - 1;
+    for (let index = 0; index < array.length; index++) {
+        secondDiagonal += array[index][i];
+        i--;
     }
-    sumsArr.push(sum);
-    console.log(sumsArr.join(' '))
+    console.log(firstDiagonal + ' ' + secondDiagonal)
 }
