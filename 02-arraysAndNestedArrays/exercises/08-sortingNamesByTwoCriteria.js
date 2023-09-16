@@ -1,10 +1,4 @@
 function sortingNamesByTwoCriteria(arr) {
-    arr.sort((a, b) => {
-        let comparising = a.length - b.length
-        if (comparising === 0) {
-            return a.localeCompare(b);
-        }
-        return comparising
-    })
+    arr.sort((a,b) => a.length- b.length)
     console.log(arr.join('\n'))
 }
