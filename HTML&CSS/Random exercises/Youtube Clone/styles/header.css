@@ -1,0 +1,43 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    background-color: lightpink;
+    width: 160px;
+}
+.icon-bar-section{
+    width: 40%;
+}
+.icon-youtube-section{
+    flex: 1;
+}
+#icon-bar{
+    margin-top: 17px;
+    margin-left: 16px;
+}
+#youtubeimg{
+    width: 80px;
+    margin-top: 8px;
+}
+.middle-section{
+    background-color: lightblue;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.search-bar{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.right-section{
+    background-color: lightpink;
+    width: 200px;
+}
