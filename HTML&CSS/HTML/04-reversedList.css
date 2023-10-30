@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+#section{
+    text-align: center;
+    width: 500px;
+    height: 280px;
+    background-color: rgb(230, 229, 229);
+    margin-left: 580px;
+}
+h3{
+    position: relative;
+    color: rgb(24, 77, 123);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 40px;
+    font-size: 23px;
+}
+ol{
+    padding-inline: 18%;
+    color: rgb(114, 111, 108);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 177px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    line-height: 28px;
+}
+li{
+    text-align: left;
+    width: 340px;
+    border-bottom: solid black 1px;
+}
