@@ -1,9 +1,8 @@
 function extractText() {
-    // TODO
     let lis = document.getElementsByTagName('li');
-    let liArray = Array.from(lis);
-    let allTexts = liArray.map( x => x.textContent);
-    
+    let arrayLis = Array.from(lis);
+    let arrayText = arrayLis.map(x => x.textContent);
+
     let textArea = document.getElementById('result');
-    textArea.value = allTexts.join("\n");
+    textArea.value = arrayText.join('\n');
 }
