@@ -1,9 +1,8 @@
 function showText() {
     // TODO
-    let span = document.querySelector('#more');
-    let anchor = document.querySelector('#text');
+    let showMoreText = document.getElementById('more');
+    let span = document.querySelector('#text');
 
-    span.text = "";
-    let text = anchor.textContent;
-    span.textContent = text
+    showMoreText.style.display = 'none';
+    span.style.display = 'inline';
 }
