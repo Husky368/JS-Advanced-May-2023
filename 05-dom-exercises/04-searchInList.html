@@ -1,0 +1,21 @@
+function search() {
+   let lis = document.getElementsByTagName('li');
+   let inputSearchText = document.getElementById('searchText');
+   let inputResultText = document.getElementById('result');
+
+   let sum = 0;
+   for (let li of lis) {
+      li.style.fontWeight = 'normal';
+      li.style.textDecorationLine = 'none';
+   }
+   let searchWord = inputSearchText.value.toLowerCase(); 
+   for (let li of lis) {
+      let currentLivalue = li.textContent.toLowerCase();
+      if(currentLivalue.includes(searchWord)){
+         li.style.fontWeight = 'bold';
+         li.style.textDecorationLine = 'underline';
+         sum++;
+      }
+   }
+   inputResultText.textContent = `${sum} matches found`
+}
