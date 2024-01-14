@@ -21,7 +21,7 @@ class Company {
         return `New employee is hired. Name: ${args[0]}. Position: ${args[2]}`;
     }
     bestDepartment() {
-
+ 
     }
 }
 let c = new Company();
