@@ -61,8 +61,8 @@ function solve() {
     let pArr = articleEl.querySelectorAll('p');
 
     titleElement.value = titleEl.textContent;
-    contentElement.value = pArr[0].textContent.substring(10);
-    categoryElement.value = pArr[1].textContent.substring(9);
+    categoryElement.value = pArr[0].textContent.substring(10);
+    contentElement.value = pArr[1].textContent.substring(9);
     parentEl.remove();
   }
   function approvedHandler(e) {
@@ -74,6 +74,12 @@ function solve() {
     approveParentLiEL.remove();
     publishListElement.appendChild(approveParentLiEL);
   }
+  // function clearHandler(e){
+  //   let publushChildren = publishListElement.querySelectorAll('li');
+  //   for (let index = 0; index < publushChildren.length; index++) {
+  //     publishListElement.removeChild(publushChildren[index])
+  //   }
+  // }
   function clearHandler(e) {
     let publishChildren = publishListElement.querySelectorAll('li');
   
